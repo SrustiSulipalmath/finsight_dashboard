@@ -15,8 +15,10 @@ Runs on `http://localhost:3000`.
 
 ### Overview
 - Net balance, monthly income, expenses, and savings rate cards
-- 30-day running balance trend (line chart)
+- Dynamic month selector — Switch between months, all cards and charts update automatically
+- Daily balance trend line chart (updates based on selected month)
 - Category spending breakdown (doughnut chart)
+- Category comparison bar chart
 - Recent transactions list
 
 ### Transactions
@@ -73,3 +75,4 @@ src/
 - `localStorage` syncs on every mutation (add/edit/delete) so data survives page reloads
 - Role switching is purely frontend — simulated via Context state, no backend needed
 - Filters are kept in component-local state and synced to Context, avoiding unnecessary re-renders
+- Month selector updates all dashboard data (cards, trends, charts) simultaneously when changed
